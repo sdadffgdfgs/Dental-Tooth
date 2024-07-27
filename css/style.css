@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__top {
+  background-color: #2378C9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top-row-addres {
+  font-size: 14px;
+  color: white;
+  margin-right: 420px;
+  background: url(/img/icons/locate.svg) no-repeat left center;
+  padding: 15px 0 15px 26px;
+  cursor: pointer;
+}
+
+.header__top-row-contacts {
+  padding: 15px 0;
+}
+
+.header__top-row-contacts-tel {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding-left: 23px;
+  background: url(/img/icons/phone.svg) no-repeat left center;
+  margin-right: 40px;
+}
+
+.header__top-row-contacts-mail {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding-left: 30px;
+  background: url(/img/icons/mail.svg) no-repeat left center;
+  margin-right: 55px;
+}
+
+.header__top-row-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top-row-messengers img {
+  width: 22px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  display: block;
+}
+.header__top-row-messengers img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.link {
+  display: inline-block;
+}
+
+.span-margin {
+  margin-right: 30px;
+}
+.span-margin:last-child {
+  margin: 0;
+}
+
+.header__bottom {
+  margin-bottom: 18px;
+}
+
+.header__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 37px;
+}
+
+.header__bottom-logo {
+  margin-right: 90px;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 90px;
+}
+
+.header__nav-list-item {
+  margin-right: 39px;
+}
+.header__nav-list-item:last-child {
+  margin: 0px;
+}
+
+.header__nav-list-link {
+  font-size: 18px;
+  color: #302D2D;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header__nav-list-link::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: width 0.4s ease, opacity 0.4s ease;
+  transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+.header__nav-list-link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.header__bottom-btn-link {
+  font-size: 14px;
+  color: white;
+  background-color: #F86D6D;
+  padding: 17px 29px;
+  border-radius: 26px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header__bottom-btn-link:hover {
+  background-color: #CB5A5A;
+}
+
+.intro {
+  height: 618px;
+  background-color: #0E6EAA;
+  margin-bottom: 115px;
+}
+
+.intro__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.intro__content-left {
+  margin-top: 179px;
+}
+
+.intro__content-name {
+  font-size: 14px;
+  color: #C5C1FE;
+  margin-bottom: 11px;
+}
+
+.intro__content-title {
+  font-size: 62px;
+  line-height: 105.7%;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 32px;
+  width: 485px;
+}
+
+.intro__content-subtitle {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 61px;
+  font-weight: 300;
+  width: 413px;
+}
+
+.intro__content-btn-link {
+  font-size: 18px;
+  color: white;
+  background-color: #5EB8F0;
+  padding: 18px 43px;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.intro__content-btn-link:hover {
+  background-color: #4E98C6;
+}
+
+.intro__content-right-girl {
+  position: absolute;
+  top: 17px;
+  left: 390px;
+  height: 600px;
+}
+
+.dental__clinic {
+  margin-bottom: 105px;
+}
+
+.dental__clinic-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dental__clinic-content-img {
+  margin-right: 61px;
+}
+
+.dental__clinic-title {
+  padding-top: 40px;
+  margin-bottom: 58px;
+  color: #302D2D;
+  font-size: 52px;
+  width: 683px;
+  line-height: 1.15;
+}
+
+.dental__clinic-title-blue {
+  color: #2378C9;
+  font-weight: bold;
+}
+
+.dental__clinic-subtitle {
+  margin-bottom: 47px;
+  color: #6B6868;
+  font-size: 18px;
+  line-height: 1.6;
+  width: 576px;
+}
+
+.dental__clinic-services {
+  color: #302D2D;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.dental__clinic-services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dental__clinic-services-left-list {
+  margin-right: 49px;
+}
+
+.dental__clinic-services-list-item {
+  color: #302D2D;
+  font-size: 20.25px;
+  padding-left: 36.5px;
+  background: url(/img/icons/ellipse.svg) no-repeat center left;
+  margin-bottom: 21px;
+}
+.dental__clinic-services-list-item:last-child {
+  margin-bottom: 0;
+}
