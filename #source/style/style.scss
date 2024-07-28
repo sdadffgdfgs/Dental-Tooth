@@ -215,13 +215,13 @@ body {
     height: 600px;
 }
 
-.dental__clinic{
+.dental__clinic {
     margin-bottom: 105px;
 }
 
 .dental__clinic-content {
     display: flex;
-    
+
 }
 
 .dental__clinic-content-left {}
@@ -276,7 +276,112 @@ body {
     padding-left: 36.5px;
     background: url(/img/icons/ellipse.svg) no-repeat center left;
     margin-bottom: 21px;
-    &:last-child{
+
+    &:last-child {
         margin-bottom: 0;
     }
+}
+
+.advantages {
+    background-color: #DFEEFC;
+
+}
+
+.advantages__content {
+    display: flex;
+    padding-top: 102px;
+}
+
+.advantages__content-card {
+    width: 326px;
+    margin-right: 111px;
+    padding-bottom: 93px;
+    flex-wrap: nowrap;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.advantages__content-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 99px;
+    width: 99px;
+}
+
+.advantages__content-title {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.advantages__content-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #56565E;
+}
+
+.team {
+    padding-top: 91px;
+}
+
+.team__content {}
+
+.team__title {
+    font-size: 52px;
+    color: #302D2D;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.team__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.team__cards {
+    display: flex;
+}
+
+.team__card {
+    margin-right: 20px;
+    background-color: #2378C9;
+    box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 21px;
+
+    margin-bottom: 200px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.team__card-img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.igor-png {
+    height: 318px;
+    width: 285px;
+}
+
+.team__card-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 22px 0 7px 24px;
+    color: white;
+}
+
+.team__card-subtitle {
+    font-size: 16px;
+    padding-left: 24px;
+    color: white;
+    font-weight: 300;
+    padding-bottom: 20px;
 }
