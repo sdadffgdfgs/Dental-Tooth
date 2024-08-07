@@ -74,8 +74,6 @@ body {
     }
 }
 
-.header__top-row-messengers a {}
-
 .link {
     display: inline-block;
 
@@ -210,7 +208,7 @@ body {
 
 .intro__content-right-girl {
     position: absolute;
-    top: 17px;
+    top: 18px;
     left: 390px;
     height: 600px;
 }
@@ -224,13 +222,9 @@ body {
 
 }
 
-.dental__clinic-content-left {}
-
 .dental__clinic-content-img {
     margin-right: 61px;
 }
-
-.dental__clinic-content-right {}
 
 .dental__clinic-title {
     padding-top: 40px;
@@ -267,8 +261,6 @@ body {
 .dental__clinic-services-left-list {
     margin-right: 49px;
 }
-
-.dental__clinic-services-right-list {}
 
 .dental__clinic-services-list-item {
     color: #302D2D;
@@ -327,8 +319,6 @@ body {
     margin-top: 91px;
     margin-bottom: 119px;
 }
-
-.team__content {}
 
 .team__title {
     font-size: 52px;
@@ -442,14 +432,24 @@ body {
 
 .price-img {
     position: absolute;
-    top: 200px;
+    top: 250px;
     right: -11px;
     height: 500px;
+    animation: moveUpDown 10s infinite;
 }
 
-.news {}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
-.news__content {}
 
 .news__title {
     text-align: center;
@@ -457,8 +457,6 @@ body {
     font-size: 52px;
     margin-bottom: 56px;
 }
-
-.news__cards {}
 
 .news__cards-top {
     display: flex;
@@ -477,9 +475,6 @@ body {
     padding: 0px 30px;
 }
 
-.news__card-image{
-   
-}
 
 .news__card-img {
     padding: 15px 15px 25px;
@@ -525,13 +520,13 @@ body {
 }
 
 .news__card-btn {
-    
     margin-bottom: 37px;
     padding: 15px 111px;
     background-color: #5EB8F0;
     border-radius: 30px;
     transition: all 0.2s ease;
-    &:hover{
+
+    &:hover {
         background-color: #407fa5;
     }
 }
@@ -546,4 +541,360 @@ body {
 .news__cards-bottom {
     display: flex;
     margin-bottom: 116px;
+}
+
+.comments {
+    background: url(/img/main/bg.jpg) no-repeat;
+    padding-top: 90px;
+    background-size: cover;
+    height: 690px;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #323030;
+        opacity: 0.39;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+}
+
+.comments__content {
+    width: 1060px;
+    background-color: #fff;
+    opacity: 0.9;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.comments__title {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 52px;
+    color: #302D2D;
+    margin-bottom: 69px;
+}
+
+.comments__info {
+    display: flex;
+    padding: 0 158px 80px 116px;
+}
+
+.comments__info-img {
+    margin-right: 52px;
+    border-radius: 50%;
+}
+
+.comments__subtitle {
+    padding-top: 11px;
+    font-size: 18px;
+    color: #6B6868;
+    line-height: 1.75;
+    margin-bottom: 37px;
+    background: url(/img/main/quotes.svg) no-repeat top center;
+    background-position: 135px 0px;
+}
+
+.comments__info-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.comments__info-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2378C9;
+    line-height: 1.75;
+    margin-right: 177px;
+}
+
+.comments__info-contacts-icon {}
+
+.comments__info-contacts-icon {
+    background-color: #E7E7E7;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.twitter__black {
+    padding: 10px 9px;
+    margin-right: 19px;
+}
+
+.vk__black {
+    padding: 13px 9px;
+    border-radius: 50%;
+}
+
+.comments__previous-comment {
+    position: absolute;
+    top: 223px;
+    left: -30px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: translateX(-10px);
+    }
+}
+
+.comments__next-comment {
+    position: absolute;
+    top: 210px;
+    right: -30px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: translateX(10px);
+    }
+}
+
+.reception {
+    background: linear-gradient(to bottom left, #A7D2FB, #DFEEFC);
+    height: 732px;
+}
+
+.container__reception {
+    margin: 0 auto;
+    width: 936px;
+}
+
+.reception__content {
+    display: flex;
+    text-align: center;
+    position: relative;
+
+}
+
+.reception__left {
+    margin-top: 117px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 425px;
+    box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.15);
+
+}
+
+.reception__title {
+    padding-top: 58px;
+    font-size: 32px;
+    color: #302D2D;
+    margin-bottom: 29px;
+}
+
+.reception__name {
+    display: block;
+    margin-left: 48px;
+    padding-left: 23px;
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    height: 62px;
+    width: 328px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        font-size: 18px;
+        color: #B9B9B9;
+    }
+}
+
+.reception__number {
+    display: block;
+    display: block;
+    margin-left: 48px;
+    padding-left: 23px;
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    height: 62px;
+    width: 328px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        font-size: 18px;
+        color: #B9B9B9;
+    }
+}
+
+.reception__btn {
+    color: white;
+    font-size: 18px;
+    padding: 18px 80px;
+    background-color: #5EB8F0;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: #407fa5;
+    }
+}
+
+.reception__subtitle {
+    margin: 0 auto;
+    width: 280px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #747474;
+    margin-bottom: 57px;
+}
+
+.reception__right {}
+
+.reception__woman {
+    position: absolute;
+    top: 0;
+    right: -180px;
+}
+
+.footer {
+    background-color: #10406F;
+}
+
+.footer__top {
+    display: flex;
+}
+
+.footer__top-left {
+    width: 240px;
+    border-right: 1px solid #B4B4B4;
+}
+
+.footer__top-left-logo {
+    display: inline-block;
+    padding-top: 66px;
+    margin-bottom: 81px;
+
+}
+
+.logo {}
+
+.footer__top-addres {
+    font-size: 14px;
+    color: white;
+    background: url(/img/icons/locate.svg) no-repeat left center;
+    padding-left: 26px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.footer__top-info {}
+
+.footer__top-contacts {
+    margin-bottom: 74px;
+}
+
+.footer__top-contacts-tel {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 23px;
+    background: url(/img/icons/phone.svg) no-repeat left center;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.footer__top-contacts-mail {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding-left: 30px;
+    background: url(/img/icons/mail.svg) no-repeat left center;
+    margin-right: 55px;
+}
+
+.footer__top-messengers {
+    width: 186px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.span-margin {}
+
+.twitter {}
+
+.link {}
+
+.twitter-img {}
+
+.instagram {}
+
+.vk {}
+
+.footer__top-right {
+    display: flex;
+
+}
+
+.services {
+    padding-top: 68px;
+    padding-left: 98px;
+    margin-right: 84px;
+}
+
+.services__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 21px;
+}
+
+.services__list {
+}
+.services__list-item {
+    font-size: 18px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+}
+.dentists {
+    padding-top: 68px;
+    margin-right: 84px;
+}
+.dentists__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 21px;
+}
+.dentists__list {
+}
+.dentists__list-item {
+    font-size: 18px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+}
+.opening__hours {
+    padding-top: 68px;
+}
+.opening__hours__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 21px;
+}
+.opening__hours-list {
+}
+.opening__hours-list-item {
+    font-size: 18px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+}
+.footer__bottom-title {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #B4B4B4;
+    color: #C3C3C3;
+    font-size: 16px;
+    font-weight: 300;
 }
