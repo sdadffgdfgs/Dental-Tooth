@@ -81,13 +81,20 @@ body {
   font-style: normal;
 }
 
+/* HEADER STYLES START */
+.header {
+  z-index: 50;
+}
+
 .header__top {
   background-color: #2378C9;
+  height: 46px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header__top-row {
@@ -97,12 +104,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 46px;
 }
 
 .header__top-row-addres {
   font-size: 14px;
   color: white;
-  margin-right: 420px;
+  margin-right: auto;
   background: url(/img/icons/locate.svg) no-repeat left center;
   padding: 15px 0 15px 26px;
   cursor: pointer;
@@ -163,6 +171,7 @@ body {
 
 .header__bottom {
   margin-bottom: 18px;
+  background-color: #fff;
 }
 
 .header__bottom-row {
@@ -176,7 +185,7 @@ body {
 }
 
 .header__bottom-logo {
-  margin-right: 90px;
+  margin-right: auto;
 }
 
 .header__nav-list {
@@ -225,6 +234,7 @@ body {
   font-size: 14px;
   color: white;
   background-color: #F86D6D;
+  display: inline-block;
   padding: 17px 29px;
   border-radius: 26px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
@@ -236,6 +246,210 @@ body {
   background-color: #CB5A5A;
 }
 
+@media screen and (max-width: 1188px) {
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+  }
+  .header__nav-list-item {
+    margin-right: 22px;
+  }
+  .header__nav-list-item:last-child {
+    margin: 0px;
+  }
+}
+.mobile__menu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 2;
+  background-color: #0E6EAA;
+  -webkit-box-shadow: -2px 4px 4px 3px rgba(49, 46, 46, 0.09);
+          box-shadow: -2px 4px 4px 3px rgba(49, 46, 46, 0.09);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.mobile__menu.active {
+  top: 0;
+}
+
+.mobile__menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.mobile__menu-header::after {
+  content: "";
+  height: 1px;
+  width: calc(100% + 40px);
+  background-color: rgba(217, 214, 214, 0.56);
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+.mobile__menu-title {
+  padding: 15px 20px 15px;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.mobile__menu-body {
+  padding: 0 20px 20px;
+}
+
+.mobile__menu-body a {
+  color: white;
+}
+
+.mobile__menu-contacts {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.mobile__menu-contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center; /* Иконка сверху по центру */
+}
+
+.mobile__menu-contacts-tel {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.mobile__menu-contacts-tel img {
+  padding-right: 11px;
+}
+
+.mobile__menu-contacts-mail {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.mobile__menu-contacts-mail img {
+  padding-right: 11px;
+}
+
+.mobile__menu-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.mobile__menu-nav {
+  text-align: center;
+}
+
+.mobile__menu-list-item {
+  margin-bottom: 31px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__nav-list-item {
+    margin-right: 22px;
+  }
+  .header__nav-list-item:last-child {
+    margin: 0px;
+  }
+  .header__nav-list-link {
+    font-size: 14px;
+  }
+  .header__top-row-contacts,
+  .header__top-row-messengers,
+  .header__nav-list {
+    display: none;
+  }
+  .header__burger {
+    z-index: 3;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .header__burger:before, .header__burger:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .header__burger:before {
+    top: 2px;
+  }
+  .header__burger:after {
+    bottom: 2px;
+  }
+  .header__burger.active:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 14px;
+  }
+  .header__burger.active:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 14px;
+  }
+  .header__burger span {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__burger.active span {
+    display: none;
+  }
+}
+/* HEADER STYLES END */
+/* INTRO STYLES START */
 .intro {
   height: 618px;
   background-color: #0E6EAA;
@@ -296,6 +510,8 @@ body {
   height: 600px;
 }
 
+/* INTRO STYLES END */
+/* DENTAL STYLES START */
 .dental__clinic {
   margin-bottom: 105px;
 }
@@ -359,6 +575,8 @@ body {
   margin-bottom: 0;
 }
 
+/* DENTAL STYLES END */
+/* ADVANTAGES STYLES START */
 .advantages {
   background-color: #DFEEFC;
 }
@@ -401,6 +619,8 @@ body {
   color: #56565E;
 }
 
+/* ADVANTAGES STYLES START */
+/* TEAM STYLES START */
 .team {
   margin-top: 91px;
   margin-bottom: 119px;
@@ -463,6 +683,8 @@ body {
   padding-bottom: 20px;
 }
 
+/* TEAM STYLES END */
+/* PRICE STYLES START */
 .price {
   background: -webkit-gradient(linear, right top, left bottom, from(#A7D2FB), to(#DFEEFC));
   background: linear-gradient(to bottom left, #A7D2FB, #DFEEFC);
@@ -561,6 +783,8 @@ body {
             transform: translateY(0px);
   }
 }
+/* PRICE STYLES END */
+/* NEWS STYLES START */
 .news__title {
   text-align: center;
   color: #302D2D;
@@ -660,6 +884,8 @@ body {
   margin-bottom: 116px;
 }
 
+/* NEWS STYLES END */
+/* COMMENTS STYLES START */
 .comments {
   background: url(/img/main/bg.jpg) no-repeat;
   padding-top: 90px;
@@ -782,6 +1008,8 @@ body {
           transform: translateX(10px);
 }
 
+/* COMMENTS STYLES END */
+/* RECEPTION STYLES START */
 .reception {
   background: -webkit-gradient(linear, right top, left bottom, from(#A7D2FB), to(#DFEEFC));
   background: linear-gradient(to bottom left, #A7D2FB, #DFEEFC);
@@ -909,6 +1137,8 @@ body {
   right: -180px;
 }
 
+/* RECEPTION STYLES END */
+/* FOOTER STYLES START */
 .footer {
   background-color: #10406F;
 }
@@ -1042,3 +1272,5 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
+
+/* FOOTER STYLES END */

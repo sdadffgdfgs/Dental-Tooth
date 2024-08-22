@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimims-cale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <link rel="stylesheet" href="/css/style.css">
     <title>Dental Tooth</title>
 </head>
@@ -47,6 +48,9 @@
 
                     </div>
 
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,7 +98,72 @@
 
             </div>
         </div>
+        
+        
 
+        <div class="mobile__menu">
+            <div class="mobile__menu-header">
+                <p class="mobile__menu-title">Меню</p>
+            </div>
+            <div class="mobile__menu-body">
+                <div class="mobile__menu-contacts">
+                    <a href="tel:380971234567" class="mobile__menu-contacts-tel">
+                        <img src="/img/icons/phone.svg" alt="Phone Icon">
+                        <span>+38 (097) 123 45 67</span>
+                    </a>
+                    <a href="maito:info@dentaltooth.kz" class="mobile__menu-contacts-mail">
+                        <img src="/img/icons/mail.svg" alt="Phone Icon">
+                        <span>info@dentaltooth.kz</span>
+                    </a>
+                </div>
+                <div class="mobile__menu-messengers">
+                    <span class="span-margin">
+                        <a href="#!" class="twitter link">
+                            <img src="/img/icons/twitter.svg" class="twitter-img" alt="twitter">
+                        </a>
+                    </span>
+
+                    <span class="span-margin">
+                        <a href="#!" class="instagram link">
+                            <img src="/img/icons/instagram.svg" alt="instagram">
+                        </a>
+                    </span>
+
+                    <span class="span-margin">
+                        <a href="#!" class="vk link">
+                            <img src="/img/icons/vk.svg" alt="vk">
+                        </a>
+                    </span>
+                </div>
+                <nav class="mobile__menu-nav">
+                    <ul class="mobile__menu-nav-list">
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Главная</a>
+                        </li>
+
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Услуги</a>
+                        </li>
+
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Наши специалисты</a>
+                        </li>
+
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Отзывы</a>
+                        </li>
+
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Блог</a>
+                        </li>
+
+                        <li class="mobile__menu-list-item">
+                            <a href="#!" class="mobile__menu-list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main class="main">
@@ -467,7 +536,7 @@
                                     <img src="/img/icons/vk__black.svg" alt="vk__black"
                                         class="comments__info-contacts-vk-image">
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -490,10 +559,11 @@
                         </p>
                         <input type="text" placeholder="Ваше имя" class="reception__name">
                         <input type="tel" placeholder="Ваше телефон" class="reception__number">
-                        <button type="submit" class="reception__btn">Записаться на прием</button> 
-                        <p class="reception__subtitle">Нажимая кнопку, Вы даёте своё согласие на обработку ваших персональных данных
+                        <button type="submit" class="reception__btn">Записаться на прием</button>
+                        <p class="reception__subtitle">Нажимая кнопку, Вы даёте своё согласие на обработку ваших
+                            персональных данных
                         </p>
-                    </div>  
+                    </div>
 
                     <div class="reception__right">
                         <img src="/img/main/reception__woman.png" alt="reception__woman" class="reception__woman">
@@ -501,7 +571,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__top">
@@ -513,7 +583,7 @@
                             <div class="footer__top-addres">
                                 ул. Протопского 28А <br> город Алматы
                             </div>
-        
+
                             <div class="footer__top-contacts">
                                 <a href="tel:380971234567" class="footer__top-contacts-tel">
                                     <span>+38 (097) 123 45 67</span>
@@ -523,26 +593,26 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="footer__top-messengers">
                             <span class="span-margin">
                                 <a href="#!" class="twitter link">
                                     <img src="/img/icons/twitter.svg" class="twitter-img" alt="twitter">
                                 </a>
                             </span>
-    
+
                             <span class="span-margin">
                                 <a href="#!" class="instagram link">
                                     <img src="/img/icons/instagram.svg" alt="instagram">
                                 </a>
                             </span>
-    
+
                             <span class="span-margin">
                                 <a href="#!" class="vk link">
                                     <img src="/img/icons/vk.svg" alt="vk">
                                 </a>
                             </span>
-    
+
                         </div>
                     </div>
                     <div class="footer__top-right">
@@ -597,12 +667,15 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                    <p class="footer__bottom-title">
-                        2022 © Dental Tooth Все права защищены
-                    </p>
+                <p class="footer__bottom-title">
+                    2022 © Dental Tooth Все права защищены
+                </p>
             </div>
         </footer>
     </main>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
