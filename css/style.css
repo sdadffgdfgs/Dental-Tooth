@@ -81,11 +81,11 @@ body {
   font-style: normal;
 }
 
-/* HEADER STYLES START */
-.header {
-  z-index: 50;
+* {
+  outline: 1px solid red;
 }
 
+/* HEADER STYLES START */
 .header__top {
   background-color: #2378C9;
   height: 46px;
@@ -246,20 +246,6 @@ body {
   background-color: #CB5A5A;
 }
 
-@media screen and (max-width: 1188px) {
-  .header__nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 30px;
-  }
-  .header__nav-list-item {
-    margin-right: 22px;
-  }
-  .header__nav-list-item:last-child {
-    margin: 0px;
-  }
-}
 .mobile__menu {
   position: absolute;
   top: -100%;
@@ -333,7 +319,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-repeat: no-repeat;
-  background-position: left center; /* Иконка сверху по центру */
+  background-position: left center;
+  /* Иконка сверху по центру */
 }
 
 .mobile__menu-contacts-tel {
@@ -378,6 +365,23 @@ body {
   margin-bottom: 31px;
 }
 
+@media screen and (max-width: 1188px) {
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+  }
+  .header__nav-list-item {
+    margin-right: 22px;
+  }
+  .header__nav-list-item:last-child {
+    margin: 0px;
+  }
+  .header__nav-list-link {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header__nav-list-item {
     margin-right: 22px;
@@ -454,6 +458,7 @@ body {
   height: 618px;
   background-color: #0E6EAA;
   margin-bottom: 115px;
+  overflow: hidden;
 }
 
 .intro__content {
@@ -506,10 +511,34 @@ body {
 .intro__content-right-girl {
   position: absolute;
   top: 18px;
-  left: 390px;
+  left: 420px;
   height: 600px;
 }
 
+@media screen and (max-width: 1280px) {
+  .intro {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intro {
+    margin-bottom: 20px;
+  }
+  .intro__content-title {
+    font-size: 52px;
+  }
+  .intro__content-subtitle {
+    font-size: 14px;
+  }
+  .intro__content-btn-link {
+    font-size: 14px;
+  }
+  .intro__content-right-girl {
+    top: 48px;
+    left: 300px;
+    height: 570px;
+  }
+}
 /* INTRO STYLES END */
 /* DENTAL STYLES START */
 .dental__clinic {
@@ -575,6 +604,54 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .dental__clinic {
+    margin-bottom: 50px;
+  }
+  .dental__clinic-content-img {
+    padding-top: 3px;
+    height: 540px;
+  }
+  .dental__clinic-title {
+    padding-top: 45px;
+    font-size: 38px;
+    margin-bottom: 70px;
+    width: 543px;
+  }
+  .dental__clinic-title-blue {
+    display: block;
+  }
+  .dental__clinic-subtitle {
+    font-size: 16px;
+    width: 550px;
+    margin-bottom: 75px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dental__clinic-content-img {
+    padding-top: 30px;
+    width: 400px;
+  }
+  .dental__clinic-title {
+    font-size: 32px;
+    padding-top: 55px;
+    margin-bottom: 70px;
+  }
+  .dental__clinic-title-blue {
+    display: block;
+  }
+  .dental__clinic-subtitle {
+    font-size: 14px;
+    width: 400px;
+    margin-bottom: 75px;
+  }
+  .dental__clinic-services {
+    font-size: 16px;
+  }
+  .dental__clinic-services-list-item {
+    font-size: 17.25px;
+  }
+}
 /* DENTAL STYLES END */
 /* ADVANTAGES STYLES START */
 .advantages {
@@ -619,7 +696,26 @@ body {
   color: #56565E;
 }
 
-/* ADVANTAGES STYLES START */
+@media screen and (max-width: 1147px) {
+  .advantages__content-card {
+    margin-right: 70px;
+  }
+  .advantages__content-title {
+    font-size: 22px;
+  }
+  .advantages__content-subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .advantages__content-title {
+    font-size: 20px;
+  }
+  .advantages__content-subtitle {
+    font-size: 14px;
+  }
+}
+/* ADVANTAGES STYLES END */
 /* TEAM STYLES START */
 .team {
   margin-top: 91px;
@@ -645,6 +741,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__cards-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+
+.team__cards-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team__card {
@@ -683,6 +805,75 @@ body {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1230px) {
+  .team__card-img {
+    width: 235px;
+    height: 268px;
+  }
+  .team__card-title {
+    font-size: 17px;
+  }
+  .team__card-subtitle {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team__title {
+    font-size: 45px;
+  }
+  .team__subtitle {
+    font-size: 14px;
+  }
+  .team__card-img {
+    width: 200px;
+    height: 233px;
+  }
+  .team__card-title {
+    font-size: 17px;
+  }
+  .team__card-subtitle {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 886px) {
+  .team__title {
+    font-size: 45px;
+  }
+  .team__subtitle {
+    font-size: 14px;
+  }
+  .team__cards {
+    display: block;
+  }
+  .team__card-img {
+    width: 260px;
+    height: 293px;
+  }
+  .team__cards-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .team__cards-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__card-title {
+    font-size: 17px;
+  }
+  .team__card-subtitle {
+    font-size: 14px;
+  }
+}
 /* TEAM STYLES END */
 /* PRICE STYLES START */
 .price {
@@ -783,6 +974,33 @@ body {
             transform: translateY(0px);
   }
 }
+@media screen and (max-width: 1160px) {
+  .price__menu {
+    margin: 75px 0 75px;
+  }
+  .price__menu-title {
+    font-size: 43px;
+  }
+  .price__menu-subtitle {
+    font-size: 14px;
+  }
+  .price__menu-list-item {
+    font-size: 16px;
+  }
+  .price-img {
+    right: 20px;
+    top: 290px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .price__menu-title {
+    font-size: 37px;
+  }
+  .price-img {
+    height: 370px;
+  }
+}
 /* PRICE STYLES END */
 /* NEWS STYLES START */
 .news__title {
@@ -826,7 +1044,7 @@ body {
   top: 15px;
   left: 15px;
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 17px;
 }
 
 .news__card-info {
@@ -884,6 +1102,27 @@ body {
   margin-bottom: 116px;
 }
 
+@media screen and (max-width: 1024px) {
+  .news__card {
+    width: 315px;
+  }
+  .news__card-img {
+    width: 312px;
+  }
+  .news__card::after {
+    width: 282px;
+    height: 206px;
+  }
+  .news__card-title {
+    font-size: 19px;
+  }
+  .news__card-btn {
+    padding: 15px 70px;
+  }
+  .news__card-subtitle {
+    font-size: 13px;
+  }
+}
 /* NEWS STYLES END */
 /* COMMENTS STYLES START */
 .comments {
@@ -998,7 +1237,7 @@ body {
 
 .comments__next-comment {
   position: absolute;
-  top: 210px;
+  top: 223px;
   right: -30px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1008,6 +1247,21 @@ body {
           transform: translateX(10px);
 }
 
+@media screen and (max-width: 1024px) {
+  .comments__content {
+    width: 900px;
+  }
+  .comments__title {
+    font-size: 45px;
+  }
+  .comments__subtitle {
+    font-size: 15px;
+  }
+  .comments__info-name {
+    font-size: 25px;
+    margin-right: 62px;
+  }
+}
 /* COMMENTS STYLES END */
 /* RECEPTION STYLES START */
 .reception {
@@ -1137,6 +1391,28 @@ body {
   right: -180px;
 }
 
+@media screen and (max-width: 1024px) {
+  .reception__left {
+    width: 400px;
+  }
+  .reception__title {
+    font-size: 32px;
+  }
+  .reception__name {
+    width: 300px;
+    margin-left: 50px;
+  }
+  .reception__number {
+    width: 300px;
+    margin-left: 50px;
+  }
+  .reception__btn {
+    font-size: 15px;
+  }
+  .reception__woman {
+    right: -43px;
+  }
+}
 /* RECEPTION STYLES END */
 /* FOOTER STYLES START */
 .footer {
@@ -1273,4 +1549,15 @@ body {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  .services {
+    padding-top: 68px;
+    padding-left: 50px;
+    margin-right: 0px;
+  }
+  .dentists {
+    padding-top: 68px;
+    margin-right: 34px;
+  }
+}
 /* FOOTER STYLES END */
